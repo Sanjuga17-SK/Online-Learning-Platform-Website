@@ -1,0 +1,38 @@
+/* Hero Animations */
+
+.glass-badge {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Glowing Background Blob Animation */
+.animate-blob {
+    animation: blob 8s infinite alternate;
+}
+
+@keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1) rotate(0deg);
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+
+    33% {
+        transform: translate(30px, -50px) scale(1.1) rotate(10deg);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9) rotate(-5deg);
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1) rotate(0deg);
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+}
