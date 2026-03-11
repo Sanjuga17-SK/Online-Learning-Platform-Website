@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cookieParser());
 // Enable Cross-Origin Resource Sharing
 app.use(cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173', // Adjust for Vite's default port
+    origin: 'https://online-learning-platform-website.netlify.app' || 'http://localhost:5173', // Adjust for Vite's default port
     credentials: true, // Allow sending cookies in Cross-Origin requests
 }));
 
